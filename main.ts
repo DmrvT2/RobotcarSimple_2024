@@ -13,6 +13,8 @@ function 右折 () {
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Ghost)
     前進１マス()
+    右折()
+    前進１マス()
     servos.P0.stop()
     servos.P1.stop()
 })
